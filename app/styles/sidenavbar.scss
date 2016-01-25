@@ -1,0 +1,138 @@
+.side-navbar {
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .side-navbar {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 70px;
+      margin-top: 0;
+      margin-bottom: 0;
+      background-color: #30343e;
+      overflow-y: auto;
+      -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+.side-navbar .brand {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    line-height: 1;
+    color: #6f7890;
+    text-align: center;
+    border-bottom: 0;
+    background-color: #0f1013;
+}
+
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.nav > li {
+  position: relative;
+  display: block;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 7px 15px;
+}
+
+.nav-float > li {
+  float: left;
+}
+
+.nav-float > li > a {
+  border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+  .side-navbar .brand {
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+}
+
+.nav-fix > li {
+    float: none;
+    display: inline-block;
+}
+
+.nav-fix > li > a {
+  position: relative;
+  padding: 10px 12px;
+  font-size: 18px;
+  color: #51586a;
+  text-align: center;
+  border-radius: 0;
+}
+.nav-fix > li {
+  border-left: 1px solid #252830;
+}
+@media (min-width: 768px) {
+  .nav-fix > li  {
+    border-top: 1px solid #252830;
+    border-right: 0;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .nav-fix > li > a {
+      padding: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-fix > li {
+      display: block;
+  }
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  color: #fff;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #434857;
+}
+
+.nav > li > a {
+  color: #cfd2da;
+}
+
+.nav-fix > li.active > a,
+.nav-fix > li.active > a:focus,
+.nav-fix > li.active > a:hover,
+.nav-fix > li.active > a:active {
+  color: #6f7890;
+  background-color: #252830;
+}
+
+
+.side-navbar .brand:hover {
+  color: #cfd2da;
+  text-decoration: none;
+}
+
+.brand-icon {
+  font-size: 30px;
+}
+
+.nav:before, .nav:after, {
+  content: " ";
+  display: table;
+  box-sizing: border-box;
+}
